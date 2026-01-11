@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <title>Redirecting</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta refresh fallback (SEO + no-JS support) -->
+  <meta http-equiv="refresh" content="1;url=https://www.polessummit.com" />
+
   <style>
     html, body {
       height: 100%;
@@ -19,8 +23,15 @@
       color: #333;
     }
   </style>
+
+  <script>
+    // JavaScript redirect
+    setTimeout(function () {
+      window.location.href = "https://www.polessummit.com";
+    }, 1000);
+  </script>
 </head>
 <body>
-  Redirecting
+  Redirecting…
 </body>
 </html>
